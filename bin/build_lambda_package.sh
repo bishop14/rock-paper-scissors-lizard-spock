@@ -1,7 +1,10 @@
 #!/bin/bash
 set -ev
 
+python -c 'import sys; print(sys.path)'
+
 PACKAGE_NAME=function.zip
+SITE_PATH=`python -c 'import sys; print(sys.path[2])'`
 
 echo "Building Lambda package ${PACKAGE_NAME}"
 
