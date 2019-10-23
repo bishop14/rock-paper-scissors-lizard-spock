@@ -1,0 +1,10 @@
+language: python
+python: 3.6
+jobs:
+  include:
+    - stage: test
+      name: "Integration test"
+      script: python -m unittest
+    - stage: build-lambda
+      name: "Build AWS Lambda package"
+      script: ./bin/build_lambda_package.sh
