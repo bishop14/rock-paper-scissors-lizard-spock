@@ -10,7 +10,7 @@ echo "Building Lambda package ${PACKAGE_NAME}"
 
 rm function.zip || true
 
-cd ${VIRTUAL_ENV}/site-packages
+cd ${SITE_PATH}/site-packages
 
 echo "Adding dependencies to package"
 zip -r9 ${OLDPWD}/function.zip .
