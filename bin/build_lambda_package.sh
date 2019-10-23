@@ -1,12 +1,14 @@
 #!/bin/bash
+set -ev
 
 PACKAGE_NAME=function.zip
+SITE_PATH=`python -c 'import sys; print(sys.path[2])'`
 
 echo "Building Lambda package ${PACKAGE_NAME}"
 
 rm function.zip || true
 
-cd skill_env/lib/python3.6/site-packages
+cd ${SITE_PATH}/site-packages
 
 echo "Adding dependencies to package"
 zip -r9 ${OLDPWD}/function.zip .
