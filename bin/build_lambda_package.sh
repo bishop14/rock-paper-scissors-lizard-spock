@@ -7,7 +7,7 @@ echo "Building Lambda package ${PACKAGE_NAME}"
 
 rm function.zip || true
 
-cd skill_env/lib/python3.6/site-packages
+cd ${VIRTUAL_ENV}/site-packages
 
 echo "Adding dependencies to package"
 zip -r9 ${OLDPWD}/function.zip .
