@@ -1,5 +1,8 @@
 [![rpsls](assets/icon_108_A2Z.png)]()
 # Rock Paper Scissors Lizard Spock
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)  
+[![Build Status](https://travis-ci.org/bishop14/rock-paper-scissors-lizard-spock.svg?branch=master)](https://travis-ci.org/bishop14/rock-paper-scissors-lizard-spock)
+
 Alexa skill insipred by the Sheldon Cooper's version of the popular game _Rock Paper Scissors_.
 
 
